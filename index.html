@@ -6,24 +6,24 @@
     <title>Portfolio</title>
     <link rel="stylesheet" href="stylesheet.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Protest+Guerrilla&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
 <body>
  
     <div class="headernhome">
     <header class="header">
-        <a href="#" class="logo">Portfolio</a>
+        <a id="d3"  href="#" class="logo">DR</a>
 
         <nav class="navbar">
-            <a href="#">Home</a>
-            <a href="#">About</a>
-            <a href="#">Skill</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Contact</a>
+            <a href="#s1">Home</a>
+            <a href="#s2">About</a>
+            <a href="#s3">Skill</a>
+            <a href="#projects">Project</a>
+            <a href="#c2">Contact</a>
         </nav>
     </header>
-
-    <section class="home">
+    <section class="home" id="s1">
         <div class="home-content">
             <h3>Hello, It's Me</h3>
             <h1>Dharmala Dinesh Reddy</h1>
@@ -42,7 +42,7 @@
     </section>
 </div>
 <div class="clear"></div>
-    <section class="about">
+    <section class="about" id="s2">
 <div class="about-img">
     <div class="im1"></div>
 </div>
@@ -53,8 +53,8 @@
 
 </div>
 </section>
-<section class="skillsec">
-    <h1>Technical Skills</h1>
+<section class="skillsec" id="s3">
+    <h1 id="d">Technical Skills</h1>
 <div class="skills">
     <div class="skill">
         <div class="skillname"><i style="color : #c95d2e" class='bx bxl-html5'></i>HTML
@@ -97,44 +97,31 @@
 </div>
 
 </section>
-<section class="contact" id="contact">
+<div class="clear" ></div>
+<section id="projects" >
+    <div class="project">
+        <h2>Projects</h2>
+        <div class="projects">
 
-<div class="contacttext">
-    <h2>Contact <span>Me</span></h2>
-    <h4>Let's Work Together</h4>
-    <p>it is portfolio website designed by none and developed by me </p>
-    <div class="contactlist">
-        <li><i class="bc bxs-send"></i>dinu3509@gmail.com </li>
-        <li><i class="bc bxs-phone"></i>8309077059 </li>
+            <div class="bbc">
+                <div class="text1">
+                    <h3 class="project-name">BBC Clone</h3>
+                    <div class="content">
+                        <p>This project is a clone of the BBC news website from the Web Dev 2.0 Course.</p>
+                    </div>
 
+                    <a class="button" href="home.html" target="_bank">View Project</a>
+                </div>
+
+            </div>
+
+            
+
+            
+
+        </div>
     </div>
-        <div class="contacticons1">
-            <a id="insta" href=""><i class='bx bxl-instagram'></i></a>
-            <a id="face" href=""><i class='bx bxl-facebook-circle' ></i></a>
-            <a id="twit" href=""><i class='bx bxl-twitter'></i></a>
-            <a id="linke" href=""><i class='bx bxl-linkedin' ></i></a>
-            <br> 
-           </div>
-    
-
-</div>
-<div class="contacform">
-    <form action="">
-        <input type="" placeholder="Enter Your Name" required>
-        <input type="email" placeholder="Enter Your Email" required>
-
-        <input type="" placeholder="Enter Your Subject">
-        <textarea name="" id="" cols="40" rows="10" placeholder="Enter Your Message required"></textarea>
-    </form>
-</div>
-
-</section>
-
-
-
-
-
-    <svg>
+    <svg class="dinesh">
         <filter id="fire">
             <feTurbulence id="turbulence" baseFrequency="0.1 0.1" 
             numOctaves="2" seed=""3>
@@ -148,6 +135,37 @@
             </feDisplacementMap>
         </filter>
     </svg>
+</section>
+
+<section id="c2">
+    <div class="contactme">Contact<span>Me</span> </div>
+
+    <div class="c21">
+        <h1>Contact Us</h1>
+      <form action="https://fabform.io/f/{insert-form-id-here}" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+            <p class="my-4">If you prefer to contact us by email. <a class="text-blue-500 hover:underline" href="">dinu350930@gmail.com</a></p>
+    </div>
+
+
+</section>
+
+
+    
     <script src="main.js">
         
     </script>
