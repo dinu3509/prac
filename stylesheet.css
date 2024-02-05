@@ -13,8 +13,10 @@ body{
 }
 #d3{
     font-family: 'Protest Guerrilla', sans-serif;
+    font-size: 40px;
 }
 .headernhome{
+
     background: linear-gradient(45deg,#d2001a,#7462ff);
     animation: color 35s ease-in-out infinite;
     background-size: 300% 300%;
@@ -33,7 +35,7 @@ body{
     }
 }
 .header{
-    position: relative;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -298,6 +300,7 @@ margin: 20px;
     animation: fillBars 2.5s 1 ;
     
 }
+
 .skillper::before{
     content: attr(per);
     position: absolute;
@@ -433,7 +436,7 @@ background: grey;
 }
 .contact{
     display: flex;
-    min-height: 90vh;
+    min-height: 100vh;
     padding: 30px;
     align-items: center;
     justify-content: space-evenly;
@@ -521,3 +524,54 @@ button {
 button:hover {
     background-color: #e74c4f;
 }
+.ground{
+    min-height: 100vh;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  footer{
+    background: salmon;
+    padding: 20px 0;
+  }
+  
+  .footer_container{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+
+  }
+  
+  .logo{
+    width: 180px;
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .social_media{
+    margin: 20px 150px;
+  }
+  
+  .social_media a{
+    color: #000;
+    font-size: 24px;
+    text-decoration: none;
+    transition: .6s;
+  }
+  
+  .social_media a:hover{
+    color: gold;
+  }
+   footer p{
+    color: black;
+    font-family: 'Protest Guerrilla', sans-serif;
+
+    font-weight: bold;
+    
+  }
